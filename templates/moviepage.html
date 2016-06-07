@@ -1,0 +1,35 @@
+{% extends "menu.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sci-Fi Movie Database</title>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12"><h1 class="movie_title">{{ movie_title.title }} ({{ all_features.year }})</h1></div>
+            </div>
+                    <div class="row">
+                        <div class="col-xs-4"><img src="/static/images/{{ all_features.filename }}" width="209" height="315" class="poster"></div>
+                        <div class="col-xs-8 embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/{{ all_features.trailer }}" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                        <div class="row">
+                            <div class="col-xs-10 desc">
+                                <form action="#" method="POST">
+                                    <input type="text" size="300" name="description" placeholder="{{ all_features.description }}">
+                                    <input type="submit" value="Edit">
+                                </form>
+
+
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-xs-12"><h3 class="movie_buttons">Add buttons here, maybe</h3></div>
+                    </div>
+            </div>
+    </body>
+</html>
+{% endblock %}

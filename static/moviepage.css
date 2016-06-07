@@ -1,0 +1,60 @@
+body {            
+    padding-top: 80px;
+    font-family: 'Droid Sans Mono';
+
+}
+
+.container {
+    width: 970px !important;
+}
+
+.row {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.movie-tile:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+
+.poster {
+    display: block;
+}
+
+.embed {
+    margin-left: -9.2rem;
+}
+
+.movie_title {
+}
+
+.desc {
+    background-color: green;
+    background-color: #e7e7e5;
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+
+.navbar,
+.navbar-inverse,
+.navbar-fixed-top {
+    background-color: #3b3a36;
+    background-image: none;
+    border-style: none;
+}
+
+.navbar-header {
+    padding-left: 5rem;
+}
+
+.sitename {
+    font-size: 2rem;
+}
+
+
